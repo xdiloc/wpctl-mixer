@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Carla (PipeWire-JACK)
+GenericName=Audio Plugin Host
+Comment=Host applications and plugins using PipeWire-JACK
+Exec=pw-jack carla
+Icon=carla
+Terminal=false
+Categories=AudioVideo;Audio;
+Keywords=audio;jack;pipewire;plugin;vst;
+Icon=/home/xdiloc/audio/mixer/carla-rack.svg

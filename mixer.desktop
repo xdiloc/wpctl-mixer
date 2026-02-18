@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Audio Mixer
+Comment=Launch Mixer Script
+Exec=python3 /home/xdiloc/audio/mixer/mixer.py
+Path=/home/xdiloc/audio/mixer/
+Terminal=false
+Categories=AudioVideo;Audio;
+Icon=multimedia-volume-control
+Icon=/home/xdiloc/audio/mixer/mixer.svg
