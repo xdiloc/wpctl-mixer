@@ -1,0 +1,23 @@
+mkdir -p ~/.config/pipewire/pipewire.conf.d/
+pluma ~/.config/pipewire/pipewire.conf.d/carla-bridge.conf
+
+context.modules = [
+	{ name = libpipewire-module-loopback
+		args = {
+			node.description = "Carla Bridge"
+			capture.props = {
+				node.name = "Carla_Input"
+				media.class = "Audio/Sink"
+				audio.position = [ FL FR ]
+			}
+			playback.props = {
+				node.name = "Carla_Output"
+				# Добавляем цель, чтобы он сам соединялся с колонками
+				target.object = "system"
+				audio.position = [ FL FR ]
+			}
+		}
+	}
+]
+
+systemctl --user restart pipewire.service
